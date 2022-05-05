@@ -1,22 +1,9 @@
-import xml.etree.ElementTree as etree
 import matplotlib.pyplot as plt
 import numpy as np
 from numpy import exp
 from lmfit import Model
 import statsmodels.api as sm
-import os
-
-projectpath = os.path.dirname(os.getcwd())
-datpath ='{}/dat'.format(projectpath)                                           # dat폴더의 경로입니다.
-filepath=[]
-for (root, directories, files) in os.walk(datpath):       # 분석해야하는 모든 파일의 경로를 알아냅니다.
-    for file in files:
-        if '.xml' in file:                                # xml파일만 골라냅니다.
-            file_path = os.path.join(root, file)
-            filepath.append(file_path)
-
-xml = etree.parse(filepath[0])
-root = xml.getroot()
+from src.filepath import root
 
 # I-V graph
 V = []
@@ -28,7 +15,7 @@ for i in root.iter('Current'):
     I = list(map(abs, I))
 
 plt.figure(1, [18, 8])
-plt.subplot(2, 3, 1)
+plt.subplot(2, 3, 4)
 plt.plot(V, I, 'b.', label='data')
 plt.yscale('log')
 plt.title('I-V analysis')
@@ -66,5 +53,3 @@ def IVR(y):
 plt.plot(x, result.best_fit, label='best_fit')
 plt.plot(x, result.best_fit, 'r-', label='R-squared ={}'.format(IVR(y)))
 plt.legend(loc = 'best')
-
-plt.show()
