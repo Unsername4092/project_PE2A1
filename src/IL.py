@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from src.filepath import root
+from filepath import root
 L = []
 IL = []
 DCBias = []
@@ -16,9 +16,9 @@ def poly(x, y, deg):  # 결정계수 구하기
     # r-squared
     p = np.poly1d(coeffs)
     yhat = p(x)
-    ybar = np.sum(y) / len(y)  # or sum(y)/len(y)
-    ssreg = np.sum((yhat - ybar) ** 2)  # or sum([ (yihat - ybar)**2 for yihat in yhat])
-    sstot = np.sum((y - ybar) ** 2)  # or sum([ (yi - ybar)**2 for yi in y])
+    ybar = np.sum(y) / len(y)           # or sum(y)/len(y) 평균값
+    ssreg = np.sum((yhat - ybar) ** 2)  # or sum([ (yihat - ybar)**2 for yihat in yhat]) 실제값과 예측값 사이
+    sstot = np.sum((y - ybar) ** 2)     # or sum([ (yi - ybar)**2 for yi in y]) 실제값과 평균값 사이
     results = ssreg / sstot
     return results
 

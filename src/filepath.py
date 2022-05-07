@@ -1,5 +1,6 @@
 import os
 import xml.etree.ElementTree as etree
+
 projectpath = '{}/project_PE2A1'.format(os.path.dirname(os.getcwd()))
 datpath ='{}/dat'.format(projectpath)                                           # dat폴더의 경로입니다.
 filepath=[]

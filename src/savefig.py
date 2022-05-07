@@ -1,7 +1,7 @@
 import matplotlib as plt
-from src.filepath import projectpath, filename
-from src import IV,IL
-from src.IL import fig
+from filepath import projectpath, filename
+import IV,IL
+from IL import fig
 
 fig.suptitle(filename, fontsize=13, fontweight='bold')
 fig.set_size_inches((25, 17), forward=False)
