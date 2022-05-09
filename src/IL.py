@@ -23,7 +23,7 @@ def poly(x, y, deg):  # 결정계수 구하기
     return results
 
 
-Rref = poly(L[-1], IL[-1], 6)  # 6차 결정계수
+Rref = poly(L[-1], IL[-1], 6)         # 6차 결정계수
 fit_L = np.polyfit(L[-1], IL[-1], 6)  # IL fitting
 fit_IL = np.polyval(fit_L, L[-1])
 
