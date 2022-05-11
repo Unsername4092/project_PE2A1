@@ -1,5 +1,4 @@
 import os
-#import importlib
 
 # csv
 from src.filepath import filename
@@ -12,8 +11,6 @@ frame.to_csv('../res/csv/{}.csv'.format(filename),index=False)
 from src.IL import fig
 os.makedirs('../res/fig', exist_ok=True)
 fig.savefig('../res/{}.png'.format(filename))
-
-
 
 
 
