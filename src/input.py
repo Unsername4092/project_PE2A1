@@ -1,4 +1,5 @@
 import glob2
+import os
 
 location = int(input('data file이 project_PE2A1 폴더 안에 있나요? (TRUE = 1 or FALSE = 0) : '))
 number_range = int(input('전체 xml 파일과 특정 xml 파일 중 선택하시오. (전체 = 1 or 특정 = 0) : '))
@@ -25,5 +26,10 @@ def filename():
                     if row_column_id in file_name_list[i]:
                         if testsite_id in file_name_list[i]:
                             file_name.append(file_name_list[i])
+        file_name_base = []
+        for j in range(len(file_name)):
+            base_name = os.path.basename(file_name[j])
+            file_name_base.append(base_name.replace('.xml',''))
+        print(file_name_base)
         print(file_name, '분석')
 filename()
