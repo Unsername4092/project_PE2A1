@@ -7,7 +7,7 @@ number_range = int(input('전체 xml 파일과 특정 xml 파일 중 선택하�
 
 def filename():
     if location == 1:
-        path = '../dat/**/*LMZ*.xml'
+        path = './dat/**/*LMZ*.xml'
     elif location == 0:
         sub_path = input('data 경로를 입력하세요 : ')
         path = str(sub_path) + '/**/*LMZ*.xml'
@@ -33,12 +33,14 @@ def filename():
             file_name_base.append(base_name.replace('.xml',''))
         # print(file_name_base)
         # print(file_name, '분석')
-        return file_name, file_name_base
-# filename()
-a,b=filename()
-# print(a)
+        return file_name,file_name_base
 
+filepath,filenamebase = filename()
 root = []
-for k in a:
+for k in filepath:
     xml = etree.parse(k)
     root.append(xml.getroot())
+
+
+'''xml=etree.parse('C:/Users/qrudg/PycharmProjects/project_PE2A1/dat/D07/20190715_190855/HY202103_D07_(0,0)_LION1_DCM_LMZC.xml')
+root=xml.getroot()'''
