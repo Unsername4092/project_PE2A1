@@ -1,6 +1,4 @@
-import matplotlib as plt
 import os
-from src import IV,IL
 
 
 def save_fig(fig, filename):

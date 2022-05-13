@@ -7,7 +7,7 @@ import pandas as pd
 dict = {'Lot':[],'Wafer':[],'Mask':[],'TestSite':[],'Name':[],'Date':[],'Operator':[],'DieRow':[],'DieColumn':[],'AnalysisWavelength (nm)':[],'Rsq of Ref. spectrum (6th)':[] ,'Max transmission of Ref. spec. (dB)':[], 'Rsq of IV':[], '1 at -1V[A]':[], '1 at 1V[A]':[]}
 
 
-def data_dict(root,I,V,ref,IVRsq,ILRsq):
+def data_dict(root,V,I,ref,IVRsq,ILRsq):
     AlignWavelength = next(root.iter('AlignWavelength'))
     Modulator = next(root.iter('Modulator'))
     TestSiteInfo = root.find('TestSiteInfo')
