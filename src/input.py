@@ -32,10 +32,14 @@ elif number_range == 0:
         base_name = os.path.basename(file_name[j])
         file_name_base.append(base_name.replace('.xml',''))
 filepath, filenamebase = file_name,file_name_base
+print(filepath)
 root = []
 for k in filepath:
     xml = etree.parse(k)
     root.append(xml.getroot())
+
+# 예외, 맞는 문자 넣을 때,
+
 
 '''def filename():
     if location == 1:

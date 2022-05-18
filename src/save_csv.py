@@ -34,12 +34,7 @@ def save_csv(dict_,filename):
     frame.to_csv('{}/res/{}.csv'.format(os.getcwd(), filename), index=False)
 
 
-
-
-
-
 '''IVdic = {I: V for V, I in zip(result.best_fit, V)}
-
 initial_list = []
 for i in x:
     x_value = IV_fit(i, 10e-16, 0.026)
