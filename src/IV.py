@@ -35,7 +35,3 @@ def IVR(y, result):
     sse = np.sum((yhat - ybar) ** 2)
     sst = np.sum((y - ybar) ** 2)
     return sse / sst
-
-
-
-
