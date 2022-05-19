@@ -1,3 +1,5 @@
 import os
 
-os.mkdir('../res/')
+folder_path = '../res'
+if not os.path.isdir(folder_path):
+    os.mkdir('../res/')
