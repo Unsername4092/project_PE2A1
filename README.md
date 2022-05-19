@@ -11,9 +11,9 @@
 This program is designed to take inforamtion from users and analyze it. 
 ***
 ## Install list
-* matplotlib: a comprehensive library for creating statics, animated
-* lmfit
-* glob2
+* matplotlib: a comprehensive library for creating statics, animated and interactive visualizations in Python. 
+* lmfit: lmfit package provides simple tools to help you build complex fitting models for non-linear least-squares probems and apply these models to real data.
+* glob2: 
 * numpy
 * sklearn
 * statsmodels
