@@ -11,7 +11,7 @@ import os
 # 조건문
 
 lot_id = ['HY202103']
-wafer_id = ['D07']
+wafer_id = []
 row_column_id = ['0,0']
 testsite_id = ['LMZ']
 filenamelist=[lot_id,wafer_id,row_column_id,['LION1'],['DCM'],testsite_id]
@@ -27,9 +27,12 @@ for f in range(len(file_name_list)):
     filesplit = file_basename.split('_')
     filefind=[]
     for fsp in range(len(filesplit)):
-        for nl in range(len(filenamelist[fsp])):
-            if filenamelist[fsp][nl] in filesplit[fsp]:
-                filefind.append(filesplit[fsp])
+        if filenamelist[fsp] == []:
+            filefind.append(filesplit[fsp])
+        else:
+            for nl in range(len(filenamelist[fsp])):
+                if filenamelist[fsp][nl] in filesplit[fsp]:
+                    filefind.append(filesplit[fsp])
     if len(filefind)==6:
         print(filefind)
 
@@ -44,7 +47,7 @@ for f in range(len(file_name_list)):
                             for testsite in testsite_id:
                                 if testsite in file_name_list[i]:
                                     file_name.append(file_name_list[i])'''
-print(file_name)
+
 
 
 
