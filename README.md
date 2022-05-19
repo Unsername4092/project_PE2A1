@@ -18,7 +18,7 @@ This program is designed to take inforamtion from users and analyze it.
 * sklearn
 * statsmodels
 * dateutil
-* pandas
+* pandas: pandas offers data structures and operation for manipulating numerical tables and time series
 * os
 ***
 ## Usage
