@@ -10,10 +10,10 @@ import os
 #Input paramters
 # 조건문
 
-lot_id = ['HY202103']
+lot_id = []
 wafer_id = []
-row_column_id = ['0,0']
-testsite_id = ['LMZ']
+row_column_id = []
+testsite_id = []
 filenamelist=[lot_id,wafer_id,row_column_id,['LION1'],['DCM'],testsite_id]
 
 # print(os.listdir('dat/D07/20190715_190855'))
@@ -34,7 +34,7 @@ for f in range(len(file_name_list)):
                 if filenamelist[fsp][nl] in filesplit[fsp]:
                     filefind.append(filesplit[fsp])
     if len(filefind)==6:
-        print(filefind)
+        print(file_name_list[f])
 
 
 '''for i in range(len(file_name_list)):
