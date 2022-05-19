@@ -10,10 +10,11 @@ import os
 #Input paramters
 # 조건문
 
-lot_id = ['HY202103']
-wafer_id = ['D07']
-row_column_id = ['0,0']
-testsite_id = ['LMZ']
+lot_id = []
+wafer_id = []
+row_column_id = []
+testsite_id = []
+filenamelist=[lot_id,wafer_id,row_column_id,['LION1'],['DCM'],testsite_id]
 
 # print(os.listdir('dat/D07/20190715_190855'))
 
@@ -24,10 +25,19 @@ file_name_list = glob2.glob(path)
 for f in range(len(file_name_list)):
     file_basename = os.path.basename(file_name_list[f])
     filesplit = file_basename.split('_')
-    print(filesplit)
+    filefind=[]
+    for fsp in range(len(filesplit)):
+        if filenamelist[fsp] == []:
+            filefind.append(filesplit[fsp])
+        else:
+            for nl in range(len(filenamelist[fsp])):
+                if filenamelist[fsp][nl] in filesplit[fsp]:
+                    filefind.append(filesplit[fsp])
+    if len(filefind)==6:
+        print(file_name_list[f])
 
 
-for i in range(len(file_name_list)):
+'''for i in range(len(file_name_list)):
     for lot in lot_id:
         if lot in file_name_list[i]:
             for wafer in wafer_id:
@@ -36,8 +46,8 @@ for i in range(len(file_name_list)):
                         if rowcolum in file_name_list[i]:
                             for testsite in testsite_id:
                                 if testsite in file_name_list[i]:
-                                    file_name.append(file_name_list[i])
-print(file_name)
+                                    file_name.append(file_name_list[i])'''
+
 
 
 
