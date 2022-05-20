@@ -11,7 +11,7 @@ def save_fig(fig, filename, savefig, showfig):
     fig.suptitle(filename, fontsize=13, fontweight='bold')
     fig.set_size_inches((25, 17), forward=False)
     if savefig == '1':
-        fig.savefig('{}/res/{}.png'.format(os.getcwd(), filename))
+        fig.savefig('{}/res/Lots/{}.png'.format(os.getcwd(), filename))
     elif savefig != '0':
         print('잘못된 입력입니다.')
         exit()
