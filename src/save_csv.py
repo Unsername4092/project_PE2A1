@@ -31,7 +31,7 @@ def data_dict(root,V,I,ref,IVRsq,ILRsq):
 
 def save_csv(dict_,filename):
     frame = pd.DataFrame(dict_)
-    frame.to_csv('{}/res/{}.csv'.format(os.getcwd(), filename), index=False)
+    frame.to_csv('{}/res/csv/{}.csv'.format(os.getcwd(), filename), index=False)
 '''IVdic = {I: V for V, I in zip(result.best_fit, V)}
 initial_list = []
 for i in x:
