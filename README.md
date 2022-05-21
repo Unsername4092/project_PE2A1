@@ -9,7 +9,8 @@
 5. Contact
 ***
 ## 1. Introduction
-This program is designed to take information from users and analyze it. 
+This program is designed to take information from users and analyze it. We created a program 
+that extracts and analyzes data provided by customers to show and save information in graphs and csv file for easy understanding.
 ***
 ## 2. Install list
 Python libraries used by the program include: 
@@ -23,9 +24,14 @@ Python libraries used by the program include:
 - **statsmodels** : statsmodels provides classes and functions for the estimation of many dirfferent statistical models.
 - **dateutil** : The dateutil uses different text formats as date syntax. It is a useful library when dealing with dates by changing them.
 - **pandas** : library for primarily using dataframe, and finally to view csv file.
-- **os** : allows you to control OS resources such as environmental variables, directories, files, and so on.
+- **os** : allows you to control OS resources such as environmental variables, directories, files, and so on.  
+  
+**if you want to install all package, enter 'pip install -r requirements.txt' in terminal.**
 ***
 ## 3. Usage
+- **first**: Enter the desired Lot, Wafer, Row, Column, Maskset, and Testsite on run.py and run it.
+- **Second**: Determine whether to save the graph.
+- **Third**: Determine whether to show the graph.
 ***
 ## 4. Program
 - **src**
