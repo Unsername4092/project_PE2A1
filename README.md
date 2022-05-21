@@ -29,9 +29,9 @@ Python libraries used by the program include:
 **if you want to install all package, enter 'pip install -r requirements.txt' in terminal.**
 ***
 ## 3. Usage
-- **first**: Enter the desired Lot, Wafer, Row, Column, Maskset, and Testsite on run.py and run it.
-- **Second**: Determine whether to save the graph.
-- **Third**: Determine whether to show the graph.
+1. Enter the desired Lot, Wafer, Row, Column, Maskset, and Testsite on run.py and run it.
+2. Determine whether to save the graph.
+3. Determine whether to show the graph.
 ***
 ## 4. Program
 - **src**
