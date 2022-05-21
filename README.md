@@ -1,16 +1,18 @@
-# PE2_team A1 project
+![header](https://capsule-render.vercel.app/api?type=Waving&color=auto&height=200&section=header&text=PE2_teamA1_project&fontSize=65)
+
 ***
 ## INDEX
-* Introduction
-* Install List
-* Usage
-* Program
-* Contact
+1. [Introduction](#1-Introduction)
+2. [Install List](#2-Install-list)
+3. [Usage](#3-Usage)
+4. [Program](#4-Program)
+5. [Contact](#5-Contact)
 ***
-## Introduction
-This program is designed to take information from users and analyze it. 
+## 1. Introduction
+This program is designed to take information from users and analyze it. We created a program 
+that extracts and analyzes data provided by customers to show and save information in graphs and csv file for easy understanding.
 ***
-## Install list
+## 2. Install list
 Python libraries used by the program include: 
 
 - **etree.ElementTree** : library for implementing simple and efficient APIs for parsing and creating XML data.
@@ -22,11 +24,16 @@ Python libraries used by the program include:
 - **statsmodels** : statsmodels provides classes and functions for the estimation of many dirfferent statistical models.
 - **dateutil** : The dateutil uses different text formats as date syntax. It is a useful library when dealing with dates by changing them.
 - **pandas** : library for primarily using dataframe, and finally to view csv file.
-- **os** : allows you to control OS resources such as environmental variables, directories, files, and so on.
+- **os** : allows you to control OS resources such as environmental variables, directories, files, and so on.  
+  
+**if you want to install all package, enter 'pip install -r requirements.txt' in terminal.**
 ***
-## Usage
+## 3. Usage
+1. Enter the desired Lot, Wafer, Row, Column, Maskset, and Testsite on run.py and run it.
+2. Determine whether to save the graph.
+3. Determine whether to show the graph.
 ***
-## Program
+## 4. Program
 - **src**
   - **parse.py** :
   - **plot.py** :
@@ -37,7 +44,8 @@ Python libraries used by the program include:
 - **gitignore** :
 - **run.py** :
 ***
-## Contact
+## 5. Contact
+if you have any questions, please contact at the following email.
 * Email: <A1@hanyang.ac.kr>
 
 
