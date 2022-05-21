@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=Waving&color=auto&height=200&section=header&text=PE2project_A1&fontSize=35)
+![header](https://capsule-render.vercel.app/api?type=Waving&color=auto&height=200&section=header&text=PE2_project_A1&fontSize=65)
 
 # PE2_team A1 project
 ***
