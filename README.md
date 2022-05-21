@@ -3,7 +3,7 @@
 ***
 ## INDEX
 1. [Introduction](#Introduction)
-2. [Install List](#Install list)
+2. [Install List](#Install_list)
 3. [Usage](#Usage)
 4. [Program](#Program)
 5. [Contact](#Contact)
