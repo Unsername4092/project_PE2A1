@@ -7,7 +7,6 @@
 3. Usage
 4. Program
 5. Contact
-********************************************************
 ***
 ## 1. Introduction
 This program is designed to take information from users and analyze it. 
