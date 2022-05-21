@@ -1,13 +1,16 @@
 import os
+from src.filename import *
 
-folder_path = './res'
-if not os.path.isdir(folder_path):
-    os.mkdir('./res/')
+def make_folder(directory):
+    try:
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+    except OSError:
+        print('ERROR')
 
-Lots_path = './res/Lots'
-if not os.path.isdir(Lots_path):
-    os.mkdir('./res/Lots/')
-
-csv_path = './res/csv'
-if not os.path.isdir(csv_path):
-    os.mkdir('./res/csv/')
+def create_folder(file_path):
+    for i in range(len(file_path)):
+        split = file_path[i].split('/')
+        path = split[-1].split('\\')
+        make_folder('./res/Lots/{}/{}/'.format(path[-3], path[-2]))
+        make_folder('./res/csv/')

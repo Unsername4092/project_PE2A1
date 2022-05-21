@@ -7,11 +7,14 @@ def fig_input():
     showfig = input('그래프 출력하시겠습니까? (TRUE =1 or FALSE =0) : ')
     return savefig, showfig
 
-def save_fig(fig, filename, savefig, showfig):
+def save_fig(fig, filename, savefig, showfig, file_path):
     fig.suptitle(filename, fontsize=13, fontweight='bold')
     fig.set_size_inches((25, 17), forward=False)
     if savefig == '1':
-        fig.savefig('{}/res/Lots/{}.png'.format(os.getcwd(), filename))
+        for i in range(len(file_path)):
+            split = file_path[i].split('/')
+            path = split[-1].split('\\')
+            fig.savefig('{}/res/Lots/{}/{}/{}.png'.format(os.getcwd(), path[-3], path[-2], path[-1]))
     elif savefig != '0':
         print('잘못된 입력입니다.')
         exit()
