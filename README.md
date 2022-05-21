@@ -2,16 +2,17 @@
 
 ***
 ## INDEX
-* Introduction
-* Install List
-* Usage
-* Program
-* Contact
+1. Introduction
+2. Install List
+3. Usage
+4. Program
+5. Contact
+********************************************************
 ***
-## Introduction
+## 1. Introduction
 This program is designed to take information from users and analyze it. 
 ***
-## Install list
+## 2. Install list
 Python libraries used by the program include: 
 
 - **etree.ElementTree** : library for implementing simple and efficient APIs for parsing and creating XML data.
@@ -25,9 +26,9 @@ Python libraries used by the program include:
 - **pandas** : library for primarily using dataframe, and finally to view csv file.
 - **os** : allows you to control OS resources such as environmental variables, directories, files, and so on.
 ***
-## Usage
+## 3. Usage
 ***
-## Program
+## 4. Program
 - **src**
   - **parse.py** :
   - **plot.py** :
@@ -38,7 +39,8 @@ Python libraries used by the program include:
 - **gitignore** :
 - **run.py** :
 ***
-## Contact
+## 5. Contact
+if you have any questions, please contact at the following email.
 * Email: <A1@hanyang.ac.kr>
 
 
