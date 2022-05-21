@@ -2,11 +2,11 @@
 
 ***
 ## INDEX
-1. Introduction
-2. Install List
-3. Usage
-4. Program
-5. Contact
+1. [Introduction](#Introduction)
+2. [Install List](#Install list)
+3. [Usage](#Usage)
+4. [Program](#Program)
+5. [Contact](#Contact)
 ***
 ## 1. Introduction
 This program is designed to take information from users and analyze it. We created a program 
