@@ -1,6 +1,4 @@
-import statsmodels.api as sm
 from dateutil.parser import parse
-import numpy as np
 import os
 import pandas as pd
 
@@ -32,12 +30,3 @@ def data_dict(root,V,I,ref,IVRsq,ILRsq):
 def save_csv(dict_,filename):
     frame = pd.DataFrame(dict_)
     frame.to_csv('{}/res/csv/{}.csv'.format(os.getcwd(), filename), index=False)
-'''IVdic = {I: V for V, I in zip(result.best_fit, V)}
-initial_list = []
-for i in x:
-    x_value = IV_fit(i, 10e-16, 0.026)
-    initial_list.append(x_value)
-initial = sm.add_constant(np.abs(y))
-result1 = sm.OLS(initial_list, initial).fit()
-Rsq = result1.rsquared
-print(Rsq)'''

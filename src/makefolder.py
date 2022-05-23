@@ -9,7 +9,7 @@ def make_folder(directory):
         print('ERROR')
 
 def create_folder(file_path):
-    for i in range(len(file_path)):
+    for i in range(len(list(set(file_path)))):
         split = file_path[i].split('/')
         path = split[-1].split('\\')
         make_folder('./res/Lots/{}/{}/'.format(path[-3], path[-2]))
