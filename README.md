@@ -30,13 +30,6 @@ Python libraries used by the program include:
 ***
 ## 3. Usage
 1. Enter the desired Lot, Wafer, Row, Column, Maskset, and Testsite on run.py and run it.
-'''python
-lot_id = []
-wafer_id = []
-row_column_id = []
-maskset_id = []
-testsite_id = []
-'''
 2. Determine whether to save the graph.
 3. Determine whether to show the graph.
 ***
