@@ -30,8 +30,26 @@ Python libraries used by the program include:
 ***
 ## 3. Usage
 1. Enter the desired Lot, Wafer, Row, Column, Maskset, and Testsite on run.py and run it.
+~~~python
+# example
+'''원하는 lot을 입력하시오'''
+lot_id = ['HY202103']
+
+'''원하는 wafer를 입력하시오'''
+wafer_id = ['D08']
+
+'''원하는 (row,column)를 입력하시오'''
+row_column_id = ['(0,0)']
+
+'''원하는 Maskset을 입력하시오'''
+maskset_id = ['LION1']
+
+'''원하는 testsite를 입력하시오'''
+testsite_id = ['LMZ']
+~~~
 2. Determine whether to save the graph.
 3. Determine whether to show the graph.
+
 ***
 ## 4. Program
 - **src**
