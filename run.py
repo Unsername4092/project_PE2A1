@@ -1,4 +1,6 @@
 from src.final import *
+import time
+start = time.time() # start time
 
 '''원하는 lot을 입력하시오'''
 lot_id = ['HY202103']
@@ -16,3 +18,5 @@ maskset_id = ['LION1']
 testsite_id = ['LMZ']
 
 run(lot_id, wafer_id, row_column_id, maskset_id, testsite_id)
+
+print("time :", round(time.time()-start,1),'s')  # now - start time = run time
