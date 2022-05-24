@@ -61,8 +61,8 @@ testsite_id = ['LMZ']
   - **savefig.py** :
   - **filename.py**: 
   - **final.py**: 
-- **gitignore** :
-- **run.py** :
+- **gitignore** : files that do not need to be managed were managed using the gitignore to exclude them from git.
+- **run.py** : It is a code that loads Python files of scr folder into one file and executes the project.
 ***
 ## 5. Contact
 if you have any questions, please contact at the following email.
