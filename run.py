@@ -6,7 +6,7 @@ start = time.time() # start time
 lot_id = ['HY202103']
 
 '''원하는 wafer를 입력하시오'''
-wafer_id = []
+wafer_id = ['D07']
 
 '''원하는 (row,column)를 입력하시오'''
 row_column_id = []
