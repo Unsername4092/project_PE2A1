@@ -29,7 +29,8 @@ Python libraries used by the program include:
 **if you want to install all package, enter 'pip install -r requirements.txt' in terminal.**
 ***
 ## 3. Usage
-1. Enter the desired Lot, Wafer, Row, Column, Maskset, and Testsite on run.py and run it.
+1. Put the xml file you want to analyze into the 'dat' folder.
+2. Enter the desired Lot, Wafer, Row, Column, Maskset, and Testsite on run.py and run it.
 ~~~python
 # example
 '''원하는 lot을 입력하시오'''
