@@ -31,7 +31,7 @@ def filename(filenamelist):
             file_path.append(file_name_list[f])
     filenamebase = []
     for j in range(len(file_name)):
-        filenamebase.append(file_basename.replace('.xml', ''))  # file_namebase: HY202103_D07_(-1,-1)_LION1_DCM_LMZC
+        filenamebase.append(file_name[j].replace('.xml', ''))  # file_namebase: HY202103_D07_(-1,-1)_LION1_DCM_LMZC
     root = []
     for k in file_path:
         xml = etree.parse(k)

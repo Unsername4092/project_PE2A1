@@ -1,7 +1,6 @@
 from src.filename import *
 
 def run(lot_id, wafer_id, row_column_id, maskset_id, testsite_id):
-    start=time.time()
     filenamelist=[lot_id, wafer_id, row_column_id, maskset_id, ['DCM'], testsite_id]
     root, filenamebase, file_path = filename(filenamelist)
     savefig,showfig = fig_input()
