@@ -29,7 +29,6 @@ def filename(filenamelist):
                         file_find.append(file_split[fsp])
         if len(file_find) == 6:
             file_path.append(file_name_list[f])
-    create_folder(file_path)
     filenamebase = []
     for j in range(len(file_name)):
         filenamebase.append(file_basename.replace('.xml', ''))  # file_namebase: HY202103_D07_(-1,-1)_LION1_DCM_LMZC

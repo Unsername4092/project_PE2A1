@@ -1,19 +1,16 @@
 import os
 import matplotlib.pyplot as plt
-
+import time
 def fig_input():
     savefig = input('그래프 저장하시겠습니까? (TRUE =1 or FALSE =0) : ')
     showfig = input('그래프 출력하시겠습니까? (TRUE =1 or FALSE =0) : ')
     return savefig, showfig
 
-def save_fig(fig, filename, savefig, showfig, file_path):
+def save_fig(fig, filename, savefig, showfig, path):
     fig.suptitle(filename, fontsize=13, fontweight='bold')
     fig.set_size_inches((25, 17), forward=False)
     if savefig == '1':
-        for i in range(len(file_path)):
-            split = file_path[i].split('/')
-            path = split[-1].split('\\')
-            fig.savefig('{}/res/Lots/{}/{}/{}.png'.format(os.getcwd(), path[-3], path[-2], path[-1]))
+        plt.savefig(fig,'{}/res/Lots/{}/{}/{}.png'.format(os.getcwd(), path[-3], path[-2], path[-1]),'compact')
     elif savefig != '0':
         print('잘못된 입력입니다.')
         exit()
