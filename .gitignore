@@ -1,2 +1,3 @@
 dat/D**/**/*.xml
-res/
+res/csv/*.csv
+res/Lots/D**/**/**.png
