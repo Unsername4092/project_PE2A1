@@ -1,5 +1,4 @@
 from src.filename import *
-import time
 
 def run(lot_id, wafer_id, row_column_id, maskset_id, testsite_id):
     start=time.time()
@@ -17,4 +16,3 @@ def run(lot_id, wafer_id, row_column_id, maskset_id, testsite_id):
         save_fig(plt.figure(r+1), filenamebase[r], savefig, showfig, pathlist[r])
         data_dict(root[r], V[r], I[r], fit_IL, IV_R, IL_R)              # data_dict(root,I_list,V_l)
     save_csv(dict,'result')
-    print(time.time()-start)
