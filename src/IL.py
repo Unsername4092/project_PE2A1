@@ -1,5 +1,9 @@
+import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.metrics import r2_score
+import warnings
+
+warnings.simplefilter('ignore', np.RankWarning)
 
 # 결정계수 구하기
 def ILR(x, y, deg):
