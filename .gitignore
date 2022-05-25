@@ -1,4 +1,4 @@
-dat/*
+dat/**
 res/csv/*.csv
 res/Lots/D**/**/**.jpg
 src/__pycache__
