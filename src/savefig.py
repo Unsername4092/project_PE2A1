@@ -9,7 +9,7 @@ def save_fig(fig, filename, savefig, showfig, path):
     fig.suptitle(filename, fontsize=13, fontweight='bold')
     fig.set_size_inches((25, 17), forward=False)
     if savefig == '1':
-        fig.savefig('{}/res/Lots/{}/{}/{}.png'.format(os.getcwd(), path[-3], path[-2], path[-1].replace('.xml','')))
+        fig.savefig('{}/res/Lots/{}/{}/{}.jpg'.format(os.getcwd(), path[-3], path[-2], path[-1].replace('.xml','')))
     elif savefig != '0':
         print('잘못된 입력입니다.')
         exit()

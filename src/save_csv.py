@@ -12,7 +12,7 @@ def data_dict(root, V, I, ref, IVRsq, ILRsq):
     TestSiteInfo = root.find('TestSiteInfo')
     times = root.attrib['CreationDate']
     times = parse(times).strftime('%Y%m%d_%H%M%S')
-    if 0.99 >= ILRsq:
+    if 0.995 >= ILRsq:
         ErrorFlage = '1'
         Error_description = 'Ref.spec.Error'
     else:
