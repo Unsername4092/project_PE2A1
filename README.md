@@ -54,7 +54,7 @@ testsite_id = ['LMZ']
 ***
 ## 4. Program
 - **src**
-  - **parse.py** : From the xml file in Dat, it collects Voltage and Current and collects L, IL, DC Bias, Reference data in Wave Length Sweep.
+  - **parse.py** : From the xml file in Dat, it collects Voltage and Current and collects L, IL, DC Bias, Reference data in Wavelength Sweep.
   - **plot.py** : It plots the  I-V graph and I-L graph.
 From left to right, the first is the Transmission Spectra as measured (raw data), the second is the reference fitting data, the third is raw data - reference fitting data, and the fourth is the I-V fitting graph.
   - **IV.py** : It is a code that fits the IV graph using lmfit and polyfit.
