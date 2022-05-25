@@ -23,4 +23,3 @@ def ILfitting(L, IL):
     fit_IL = np.polyval(fit_L, L[-1])
     Rref=r2_score(IL[-1],fit_IL)
     return Rref,fit_IL
-
