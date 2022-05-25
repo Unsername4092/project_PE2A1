@@ -62,7 +62,7 @@ From left to right, the first is the Transmission Spectra as measured (raw data)
   - **save_csv.py** :
   - **savefig.py** :
   - **filename.py**: 
-  - **final.py**: 
+  - **final.py**: It is a code that defines the functions to be retrieved and executed in the filename.py.
 - **gitignore** : files that do not need to be managed were managed using the gitignore to exclude them from git.
 - **run.py** : It is a code that loads Python files of scr folder into one file and executes the project.
 ***
