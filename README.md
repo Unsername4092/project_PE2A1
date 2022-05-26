@@ -74,6 +74,3 @@ From left to right, the first is the Transmission Spectra as measured (raw data)
 ## 5. Contact
 if you have any questions, please contact at the following email.
 * Email: <A1@hanyang.ac.kr>
-
-
-소개, 목차, 설치할 것, 사용 방법, file 정보, 마무리
