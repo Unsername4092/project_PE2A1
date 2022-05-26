@@ -5,7 +5,6 @@ import xml.etree.ElementTree as etree
 def filename(filenamelist):
     file_name = []
     file_path = []
-    file_basename = ''
     path = './dat/**/*LMZ*.xml'
     file_name_list = glob2.glob(path)
     for f in range(len(file_name_list)):

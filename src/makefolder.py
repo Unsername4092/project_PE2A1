@@ -1,4 +1,3 @@
-import os
 from src.filename import *
 
 def make_folder(directory):

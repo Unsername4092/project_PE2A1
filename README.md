@@ -21,10 +21,11 @@ Python libraries used by the program include:
 - **glob2** : library for extracting multiple xml files as a list.
 - **numpy** : the fundamental package for scientific computing in Python.
 - **sklearn** : Python library that you can use to analyze machine learning on Python.
-- **statsmodels** : statsmodels provides classes and functions for the estimation of many dirfferent statistical models.
 - **dateutil** : The dateutil uses different text formats as date syntax. It is a useful library when dealing with dates by changing them.
 - **pandas** : library for primarily using dataframe, and finally to view csv file.
-- **os** : allows you to control OS resources such as environmental variables, directories, files, and so on.  
+- **os** : allows you to control OS resources such as environmental variables, directories, files, and so on.
+- **time** : 
+- **warnings** : 
   
 **if you want to install all package, enter 'pip install -r requirements.txt' in terminal.**
 ***

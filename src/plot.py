@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 
-
 def IVplot(V, I, x, R, result, figure):
     plt.figure(figure,[18,8])
     plt.subplot(2, 3, 4)
@@ -12,7 +11,6 @@ def IVplot(V, I, x, R, result, figure):
     plt.plot(x, result.best_fit, label='best_fit')
     plt.plot(x, result.best_fit, 'r-', label='R-squared ={}'.format(R))
     plt.legend(loc='best')
-
 
 def ILplot(L, IL, DCBias, fit_IL, Rref, figure):
     plt.figure(figure,[18,8])
