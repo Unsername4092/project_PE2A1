@@ -24,8 +24,8 @@ Python libraries used by the program include:
 - **dateutil** : The dateutil uses different text formats as date syntax. It is a useful library when dealing with dates by changing them.
 - **pandas** : library for primarily using dataframe, and finally to view csv file.
 - **os** : allows you to control OS resources such as environmental variables, directories, files, and so on.
-- **time** : 
-- **warnings** : 
+- **time** : Used to measure the total running time of a program.
+- **warnings** : Use to hide warning messages that appear when using the polyfit() function.
   
 **if you want to install all package, enter 'pip install -r requirements.txt' in terminal.**
 ***
@@ -60,7 +60,7 @@ testsite_id = ['LMZ']
 From left to right, the first is the Transmission Spectra as measured (raw data), the second is the reference fitting data, the third is raw data - reference fitting data, and the fourth is the I-V fitting graph.
   - **IV.py** : It is a code that fits the IV graph using lmfit and polyfit.
   - **IL.py** : It fits the I-L graph and reference using polyfit and obtain the R-squared coefficient according to the fitting data.
-  - **save_csv.py** :
+  - **save_csv.py** : 
   - **savefig.py** :
   - **filename.py**: 
   - **final.py**: It is a code that defines the functions to be retrieved and executed in the filename.py.
