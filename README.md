@@ -27,7 +27,11 @@ Python libraries used by the program include:
 - **time** : Used to measure the total running time of a program.
 - **warnings** : Use to hide warning messages that appear when using the polyfit() function.
   
-**if you want to install all package, enter 'pip install -r requirements.txt' in terminal.**
+**if you want to install all package, enter**
+~~~python console
+pip install -r requirement.txt
+~~~
+**in terminal.**
 ***
 ## 3. Usage
 1. Put the xml file you want to analyze into the 'dat' folder.
