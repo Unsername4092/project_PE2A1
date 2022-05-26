@@ -60,9 +60,9 @@ testsite_id = ['LMZ']
 From left to right, the first is the Transmission Spectra as measured (raw data), the second is the reference fitting data, the third is raw data - reference fitting data, and the fourth is the I-V fitting graph.
   - **IV.py** : It is a code that fits the IV graph using lmfit and polyfit.
   - **IL.py** : It fits the I-L graph and reference using polyfit and obtain the R-squared coefficient according to the fitting data.
-  - **save_csv.py** : 
-  - **savefig.py** :
-  - **filename.py**: 
+  - **save_csv.py** : It is a code that documents the analyzed data values as a csv file.
+  - **savefig.py** : It is a code that allows you to decide whether to save and output a graph.
+  - **filename.py**: It brings the name of the file to be analyzed and its root.
   - **final.py**: It is a code that defines the functions to be retrieved and executed in the filename.py.
 - **gitignore** : files that do not need to be managed were managed using the gitignore to exclude them from git.
 - **run.py** : It is a code that loads Python files of scr folder into one file and executes the project.
