@@ -1,10 +1,3 @@
-from src.parse import xmlparse
-from src.IV import *
-from src.IL import *
-from src.plot import *
-from src.savefig import *
-from src.save_csv import *
-from src.makefolder import *
 import glob2
 import os
 import xml.etree.ElementTree as etree
