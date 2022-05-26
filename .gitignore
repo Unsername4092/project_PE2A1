@@ -1,3 +1,4 @@
 dat/**
 res/csv/*.csv
 res/Lots/D**/**/**.jpg
+__pycache__/
