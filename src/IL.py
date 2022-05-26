@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.metrics import r2_score
 import warnings
@@ -18,8 +17,8 @@ def ILR(x, y, deg):
     return results
 
 def ILfitting(L, IL):
-    #Rref = np.poly(L[-1], IL[-1], 6)  # 6차 결정계수
+    #Rref = np.poly(L[-1], IL[-1], 6)     # 6차 결정계수
     fit_L = np.polyfit(L[-1], IL[-1], 6)  # IL fitting
     fit_IL = np.polyval(fit_L, L[-1])
     Rref=r2_score(IL[-1],fit_IL)
-    return Rref,fit_IL
+    return Rref, fit_IL
