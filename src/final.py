@@ -2,7 +2,7 @@ from src.parse import xmlparse
 from src.IV import *
 from src.IL import *
 from src.plot import *
-from src.savefig import *
+from src.save_fig import *
 from src.save_csv import *
 from src.makefolder import *
 from src.filename import *

@@ -24,7 +24,7 @@ def IVfitting(V, I):
 
     initial = sm.add_constant(np.abs(y))
     result1 = sm.OLS(initial_list, initial).fit()
-    return x,y,result
+    return x, y, result
 
 
 # R-squared

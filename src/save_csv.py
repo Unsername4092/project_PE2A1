@@ -1,6 +1,4 @@
-import statsmodels.api as sm
 from dateutil.parser import parse
-import numpy as np
 import os
 import pandas as pd
 
