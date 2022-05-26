@@ -2,7 +2,10 @@ from dateutil.parser import parse
 import os
 import pandas as pd
 
-dict = {'Lot':[],'Wafer':[],'Mask':[],'TestSite':[],'Name':[],'Date':[],'Operator':[],'DieRow':[],'DieColumn':[], 'ErrorFlag':[], 'Error description':[], 'AnalysisWavelength (nm)':[],'Rsq of Ref. spectrum (6th)':[] ,'Max transmission of Ref. spec. (dB)':[], 'Rsq of IV':[], '1 at -1V[A]':[], '1 at 1V[A]':[]}
+dict = {'Lot':[],'Wafer':[],'Mask':[],'TestSite':[],'Name':[],'Date':[],'Operator':[],
+        'DieRow':[],'DieColumn':[], 'ErrorFlag':[], 'Error description':[], 'AnalysisWavelength (nm)':[],
+        'Rsq of Ref. spectrum (6th)':[] ,'Max transmission of Ref. spec. (dB)':[],
+        'Rsq of IV':[], '1 at -1V[A]':[], '1 at 1V[A]':[]}
 
 def data_dict(root, V, I, ref, IVRsq, ILRsq):
     AlignWavelength = next(root.iter('AlignWavelength'))
@@ -37,3 +40,4 @@ def data_dict(root, V, I, ref, IVRsq, ILRsq):
 def save_csv(dict_,filename):
     frame = pd.DataFrame(dict_)
     frame.to_csv('{}/res/csv/{}.csv'.format(os.getcwd(), filename), index=False)
+
