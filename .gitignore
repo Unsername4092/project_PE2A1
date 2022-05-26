@@ -1,3 +1,4 @@
 dat/**/
 res/
 __pycache__/
+.idea/
