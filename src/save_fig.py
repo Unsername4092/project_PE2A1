@@ -25,6 +25,3 @@ def save_fig(fig, filename, savefig, showfig, path):
         plt.show()
     elif showfig == '0':
         plt.close(fig)
-
-
-

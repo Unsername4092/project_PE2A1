@@ -31,4 +31,3 @@ def ILplot(L, IL, DCBias, fit_IL, Rref, figure):
                 plt.plot(L[j], IL[j] - fit_IL, label=DCBias[j])
         plt.legend(loc='best', ncol=2, fontsize=8)
     plt.tight_layout()
-

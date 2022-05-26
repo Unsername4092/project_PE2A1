@@ -29,4 +29,3 @@ def filename(filenamelist):
         xml = etree.parse(k)
         root.append(xml.getroot())
     return root, filenamebase, file_path
-

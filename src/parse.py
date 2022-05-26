@@ -35,7 +35,3 @@ def xmlparse(root):
         IL.append(ILL)
         DCBias.append(DCL)
     return I, V, L, IL, DCBias
-
-
-
-
