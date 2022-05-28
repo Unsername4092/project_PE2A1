@@ -73,6 +73,9 @@ From left to right, the first is the Transmission Spectra as measured (raw data)
 - **run.py** : It is a code that loads Python files of scr folder into one file and executes the project.
 ***
 ## 5. Result
+If you run the 'run.py', the resulting folder 'res' is created.
+- **csv folder** : 
+- **Lots folder** : 
 ***
 ## 6. Contact
 if you have any questions, please contact at the following email.
