@@ -6,7 +6,8 @@
 2. [Install List](#2-Install-list)
 3. [Usage](#3-Usage)
 4. [Program](#4-Program)
-5. [Contact](#5-Contact)
+5. [Result](#5-Result)
+6. [Contact](#6-Contact)
 ***
 ## 1. Introduction
 This program is designed to take information from users and analyze it. We created a program 
@@ -71,6 +72,8 @@ From left to right, the first is the Transmission Spectra as measured (raw data)
 - **gitignore** : files that do not need to be managed were managed using the gitignore to exclude them from git.
 - **run.py** : It is a code that loads Python files of scr folder into one file and executes the project.
 ***
-## 5. Contact
+## 5. Result
+***
+## 6. Contact
 if you have any questions, please contact at the following email.
 * Email: <A1@hanyang.ac.kr>
