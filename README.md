@@ -74,8 +74,14 @@ From left to right, the first is the Transmission Spectra as measured (raw data)
 ***
 ## 5. Result
 If you run the 'run.py', the resulting folder 'res' is created.
-- **csv folder** : 
-- **Lots folder** : 
+- **csv folder** : csv file  
+if Rsq of Ref.spectrum <= 0.995, Error description is 'Ref.spec Error' and ErrorFlag is 1.
+- **Lots folder** : graph jpg file
+  - first graph, transmission spectrum raw graph
+  - second graph, reference fitting graph
+  - third graph, raw graph - reference fitting
+  - fourth graph, I-V raw graph and I-V fitting
+
 ***
 ## 6. Contact
 if you have any questions, please contact at the following email.
