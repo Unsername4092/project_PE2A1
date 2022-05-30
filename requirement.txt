@@ -1,4 +1,3 @@
-ElementTree
 matplotlib
 lmfit
 glob2
@@ -7,3 +6,5 @@ sklearn
 dateutil
 pandas
 os
+time
+warnings
