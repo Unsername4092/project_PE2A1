@@ -19,5 +19,3 @@ testsite_id = ['LMZ']
 
 run(lot_id, wafer_id, row_column_id, maskset_id, testsite_id)
 print("time :", round(time.time()-start, 1), 's')  # now - start time = run time
-
-

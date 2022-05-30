@@ -5,7 +5,7 @@ import pandas as pd
 dict = {'Lot':[],'Wafer':[],'Mask':[],'TestSite':[],'Name':[],'Date':[],'Operator':[],
         'DieRow':[],'DieColumn':[], 'ErrorFlag':[], 'Error description':[], 'AnalysisWavelength (nm)':[],
         'Rsq of Ref. spectrum (6th)':[] ,'Max transmission of Ref. spec. (dB)':[],
-        'Rsq of IV':[], '1 at -1V[A]':[], '1 at 1V[A]':[]}
+        'Rsq of IV':[], 'I at -1V[A]':[], 'I at 1V[A]':[]}
 
 def data_dict(root, V, I, ref, IVRsq, ILRsq):
     AlignWavelength = next(root.iter('AlignWavelength'))
@@ -34,8 +34,8 @@ def data_dict(root, V, I, ref, IVRsq, ILRsq):
     dict['Rsq of Ref. spectrum (6th)'].append(ILRsq)
     dict['Max transmission of Ref. spec. (dB)'].append(max(ref))
     dict['Rsq of IV'].append(IVRsq)
-    dict['1 at -1V[A]'].append(I[V.index(-1.0)])
-    dict['1 at 1V[A]'].append(I[V.index(1.0)])
+    dict['I at -1V[A]'].append(I[V.index(-1.0)])
+    dict['I at 1V[A]'].append(I[V.index(1.0)])
 
 def save_csv(dict_,filename):
     frame = pd.DataFrame(dict_)
