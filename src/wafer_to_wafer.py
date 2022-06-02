@@ -42,4 +42,5 @@ for i in range(len(wafernumber)):
     elif str(wafernumber[i]) == 'D24':
         plt.scatter(wafernumber[i], minone_V[i], c='purple')
 
+plt.tight_layout()
 plt.show()
