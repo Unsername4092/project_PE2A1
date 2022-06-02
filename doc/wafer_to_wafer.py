@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
+
 data = pd.read_csv('../res/csv/result.csv')
 wafernumber = data['Wafer']
 wafer = list(set(data['Wafer']))
@@ -63,12 +64,12 @@ for i in range(len(wafernumber)):
         ax2.scatter(wafernumber[i], one_V[i], c='purple')
         ax3.scatter(wafernumber[i], minone_V[i], c='purple')
 
-ax4.boxplot([spec1, spec2, spec3, spec4], sym='+')
-ax4.set_xticklabels(wafer, fontsize = 8)
-ax5.boxplot([one1, one2, one3, one4], sym='+')
-ax5.set_xticklabels(wafer, fontsize = 8)
-ax6.boxplot([min1, min2, min3, min4], sym='+')
-ax6.set_xticklabels(wafer, fontsize = 8)
+    ax4.boxplot([spec1, spec2, spec3, spec4], sym='+')
+    ax4.set_xticklabels(wafer, fontsize=8)
+    ax5.boxplot([one1, one2, one3, one4], sym='+')
+    ax5.set_xticklabels(wafer, fontsize=8)
+    ax6.boxplot([min1, min2, min3, min4], sym='+')
+    ax6.set_xticklabels(wafer, fontsize=8)
 
 
     # if str(wafernumber[i]) == 'D07':
