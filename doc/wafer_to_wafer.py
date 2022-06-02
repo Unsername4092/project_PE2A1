@@ -7,7 +7,6 @@ spec = data['Rsq of Ref. spectrum (6th)']
 one_V = data['I at 1V[A]']
 minone_V = data['I at -1V[A]']
 
-plt.suptitle('Result of wafer-to-wafer using csv file', fontsize=20)
 fig = plt.figure(figsize=(16, 10))
 ax1=fig.add_subplot(2,3,1)
 ax2=fig.add_subplot(2,3,2)
@@ -15,13 +14,14 @@ ax3=fig.add_subplot(2,3,3)
 ax4=fig.add_subplot(2,3,4)
 ax5=fig.add_subplot(2,3,5)
 ax6=fig.add_subplot(2,3,6)
+plt.suptitle('Result of wafer-to-wafer using csv file', fontsize=20)
 
 for i in range(len(wafernumber)):
-    plt.subplot(2, 3, 1)
     if str(wafernumber[i]) == 'D07':
         ax1.scatter(wafernumber[i], spec[i], c='red')
         ax2.scatter(wafernumber[i], one_V[i], c='red')
         ax3.scatter(wafernumber[i], minone_V[i], c='red')
+        ax4.boxplot([spec])
     elif str(wafernumber[i]) == 'D08':
         ax1.scatter(wafernumber[i], spec[i], c='blue')
         ax2.scatter(wafernumber[i], one_V[i], c='blue')
