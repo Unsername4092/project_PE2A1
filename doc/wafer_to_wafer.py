@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import pandas as pd
-
+import seaborn as sns
 
 data = pd.read_csv('../res/csv/result.csv')
 wafernumber = data['Wafer']
@@ -17,57 +17,37 @@ ax4=fig.add_subplot(2,3,4)
 ax5=fig.add_subplot(2,3,5)
 ax6=fig.add_subplot(2,3,6)
 plt.suptitle('Result of wafer-to-wafer using csv file', fontsize=20)
-# spec
-spec1=[]
-spec2=[]
-spec3=[]
-spec4=[]
-# One_V
-one1=[]
-one2=[]
-one3=[]
-one4=[]
-#minone_V
-min1=[]
-min2=[]
-min3=[]
-min4=[]
+
+ax1.set_xlabel('Wafer')
+ax1.set_ylabel('Max transmission Ref.spec.(dB)')
+
+ax2.set_xlabel('Wafer')
+ax2.set_ylabel('I at -1V')
+
+ax3.set_xlabel('Wafer')
+ax3.set_ylabel('I at 1V')
 
 for i in range(len(wafernumber)):
     if str(wafernumber[i]) == 'D07':
-        spec1.append(spec[i])
-        one1.append(one_V[i])
-        min1.append(minone_V[i])
         ax1.scatter(wafernumber[i], spec[i], c='red')
         ax2.scatter(wafernumber[i], one_V[i], c='red')
         ax3.scatter(wafernumber[i], minone_V[i], c='red')
     elif str(wafernumber[i]) == 'D08':
-        spec2.append(spec[i])
-        one2.append(one_V[i])
-        min2.append(minone_V[i])
         ax1.scatter(wafernumber[i], spec[i], c='blue')
         ax2.scatter(wafernumber[i], one_V[i], c='blue')
         ax3.scatter(wafernumber[i], minone_V[i], c='blue')
     elif str(wafernumber[i]) == 'D23':
-        spec3.append(spec[i])
-        one3.append(one_V[i])
-        min3.append(minone_V[i])
         ax1.scatter(wafernumber[i], spec[i], c='green')
         ax2.scatter(wafernumber[i], one_V[i], c='green')
         ax3.scatter(wafernumber[i], minone_V[i], c='green')
     elif str(wafernumber[i]) == 'D24':
-        spec4.append(spec[i])
-        one4.append(one_V[i])
-        min4.append(minone_V[i])
         ax1.scatter(wafernumber[i], spec[i], c='purple')
         ax2.scatter(wafernumber[i], one_V[i], c='purple')
         ax3.scatter(wafernumber[i], minone_V[i], c='purple')
 
-ax4.boxplot([spec1, spec2, spec3, spec4], sym='+')
-# ax4.set_xticklabels(wafer, fontsize=8)
-ax5.boxplot([one1, one2, one3, one4], sym='+')
-# ax5.set_xticklabels(wafer, fontsize=8)
-ax6.boxplot([min1, min2, min3, min4], sym='+')
-# ax6.set_xticklabels(wafer, fontsize=8)
+sns.boxplot(x='Wafer', y='Rsq of Ref. spectrum (6th)', data=data, palette='RdBu_r', ax=ax4)
+sns.boxplot(x='Wafer', y='I at -1V[A]', data=data, palette='RdBu_r', ax=ax5)
+sns.boxplot(x='Wafer', y='I at 1V[A]', data=data, palette='RdBu_r', ax=ax6)
+
 plt.tight_layout()
 plt.show()
