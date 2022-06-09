@@ -40,19 +40,19 @@ pip install -r requirement.txt
 3. If you want to load all the files, leave the corresponding space blank.
 ~~~python
 # example
-'''원하는 lot을 입력하시오'''
+'''Enter the desired lot'''
 lot_id = ['HY202103']
 
-'''원하는 wafer를 입력하시오'''
-wafer_id = ['D08']
+'''Enter the desired wafer'''
+wafer_id = ['D07']
 
-'''원하는 (row,column)를 입력하시오'''
+'''Enter the desired (row,column)'''
 row_column_id = ['(0,0)']
 
-'''원하는 Maskset을 입력하시오'''
+'''Enter the desired Maskset'''
 maskset_id = ['LION1']
 
-'''원하는 testsite를 입력하시오'''
+'''Enter the desired testsite'''
 testsite_id = ['LMZ']
 ~~~
 2. Determine whether to save the graph.
