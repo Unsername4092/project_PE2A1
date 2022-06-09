@@ -40,3 +40,4 @@ def data_dict(root, V, I, ref, IVRsq, ILRsq):
 def save_csv(dict_,filename):
     frame = pd.DataFrame(dict_)
     frame.to_csv('{}/res/csv/{}.csv'.format(os.getcwd(), filename), index=False)
+

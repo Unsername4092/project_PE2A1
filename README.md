@@ -37,6 +37,7 @@ pip install -r requirement.txt
 ## 3. Usage
 1. Put the xml file you want to analyze into the 'dat' folder.
 2. Enter the desired Lot, Wafer, Row, Column, Maskset, and Testsite on run.py and run it.
+3. If you want to load all the files, leave the corresponding space blank.
 ~~~python
 # example
 '''원하는 lot을 입력하시오'''
