@@ -86,4 +86,6 @@ if Rsq of Ref.spectrum <= 0.995, Error description is 'Ref.spec Error' and Error
 ***
 ## 6. Contact
 if you have any questions, please contact at the following email.
-* Email: <A1@hanyang.ac.kr>
+* 경훈: <qrudgns17@hanyang.ac.kr>
+* 선진: <l2020071612@hanyang.ac.kr>
+* 민주: <cmj753@hanyang.ac.kr>
