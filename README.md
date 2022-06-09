@@ -43,7 +43,7 @@ pip install -r requirement.txt
 lot_id = ['HY202103']
 
 '''Enter the desired wafer'''
-wafer_id = ['D08']
+wafer_id = ['D07']
 
 '''Enter the desired (row,column)'''
 row_column_id = ['(0,0)']
