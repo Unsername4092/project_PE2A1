@@ -3,4 +3,3 @@ res/
 __pycache__/
 .idea/
 src/__pycache__
-doc/**.py
