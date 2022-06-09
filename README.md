@@ -60,6 +60,7 @@ testsite_id = ['LMZ']
 
 ***
 ## 4. Program
+![program](./image/program.png)
 - **src**
   - **parse.py** : From the xml file in Dat, it collects Voltage and Current and collects L, IL, DC Bias, Reference data in Wavelength Sweep.
   - **plot.py** : It plots the  I-V graph and I-L graph.
